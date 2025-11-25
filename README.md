@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    .container {
+      width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type=text], input[type=email], input[type=password] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Registration Form</h2>
+  <form action="submit_form.php" method="POST">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm password">Confirm Password</label>
+    <input type="password" id="confirm password" name="confirm password" required>
+
+    <input type="submit" value="Register">
+  </form>
+</div>
+
+</body>
+</html>
